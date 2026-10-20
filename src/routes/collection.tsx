@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useCollection, type CollectedKanji } from "@/lib/collection";
 import { SpeakButton } from "@/components/SpeakButton";
 import { Credits } from "@/components/Credits";
+import { MemoryPlaceEditor } from "@/components/MemoryPlaceEditor";
 
 export const Route = createFileRoute("/collection")({
   head: () => ({
@@ -51,8 +52,9 @@ function CollectionPage() {
             {collection.items.map((k: CollectedKanji) => (
               <li
                 key={k.char}
-                className="paper flex items-center gap-4 rounded-2xl px-4 py-3"
+                className="paper flex flex-col gap-3 rounded-2xl px-4 py-3"
               >
+                <div className="flex items-center gap-4">
                 <span className="font-jp text-4xl leading-none text-primary">{k.char}</span>
                 <div className="min-w-0 flex-1">
                   <p className="truncate font-medium">{k.meaning}</p>
@@ -72,6 +74,12 @@ function CollectionPage() {
                   </p>
                 </div>
                 <SpeakButton text={k.char} label="Écouter" />
+                </div>
+                <MemoryPlaceEditor
+                  kanji={k}
+                  others={collection.items}
+                  onSave={(m) => collection.setMemory(k.char, m)}
+                />
               </li>
             ))}
           </ul>

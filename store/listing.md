@@ -14,6 +14,7 @@ Bashoji associe un kanji à chaque carré de 30 mètres sur Terre. Le même lieu
 • Regardez l'ordre des traits animé, puis dessinez-le à la main
 • Tracez-le dans l'air avec votre index, grâce à la caméra (pincez pouce + index pour poser le « stylo »)
 • Validez le tracé pour ajouter le kanji à votre collection
+• Rite d'ancrage (expérimental) : rendez-vous sur l'endroit que le mot vous rappelle, tracez-le une dernière fois et scellez le lieu. Un lieu, un seul kanji
 • Écoutez la prononciation (selon les voix de synthèse de votre téléphone)
 • 2136 kanji jōyō, 100 % hors ligne, sans compte ni publicité
 

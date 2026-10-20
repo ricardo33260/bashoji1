@@ -1,11 +1,21 @@
 import { useCallback, useEffect, useState } from "react";
 
+/** Lieu personnel auquel l'utilisateur associe un kanji (ancrage mnémotechnique). */
+export type MemoryPlace = {
+  lat: number;
+  lon: number;
+  note: string;
+  /** Date du scellage : le lieu est alors définitivement lié au kanji. */
+  sealedAt?: number;
+};
+
 export type CollectedKanji = {
   char: string;
   meaning: string;
   geohash: string | null;
   at: number;
   count: number;
+  memory?: MemoryPlace;
 };
 
 const KEY = "bashoji.collection.v1";
@@ -57,10 +67,22 @@ export function useCollection() {
     });
   }, []);
 
+  const setMemory = useCallback((char: string, memory: MemoryPlace | null) => {
+    setItems((prev) => {
+      const next = prev.map((k) => {
+        if (k.char !== char) return k;
+        const { memory: _old, ...rest } = k;
+        return memory ? { ...rest, memory } : rest;
+      });
+      write(next);
+      return next;
+    });
+  }, []);
+
   const clear = useCallback(() => {
     setItems([]);
     write([]);
   }, []);
 
-  return { items, add, clear };
+  return { items, add, setMemory, clear };
 }
