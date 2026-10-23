@@ -15,13 +15,13 @@ import { Credits } from "@/components/Credits";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Bashoji — le kanji de chaque lieu" },
+      { title: "Kanji Sekai — le kanji de chaque lieu" },
       {
         name: "description",
         content:
-          "Bashoji : chaque carré de 30 mètres sur Terre possède son propre kanji et sa signification, toujours identique pour un même geohash.",
+          "Kanji Sekai : chaque carré de 30 mètres sur Terre possède son propre kanji et sa signification, toujours identique pour un même geohash.",
       },
-      { property: "og:title", content: "Bashoji" },
+      { property: "og:title", content: "Kanji Sekai" },
       {
         property: "og:description",
         content: "Découvrez le kanji attaché à votre position, stable pour chaque carré de 30 m.",
@@ -259,7 +259,7 @@ function Index() {
           />
         )}
         {!pad && (
-          <div className="absolute left-4 top-4 flex gap-2">
+          <div className="absolute left-4 top-[calc(var(--safe-area-inset-top,env(safe-area-inset-top,0px))+1rem)] flex gap-2">
             <button
               type="button"
               onClick={() => setCamera((c) => !c)}
@@ -286,7 +286,7 @@ function Index() {
             type="button"
             onClick={() => setHud(false)}
             aria-label="Quitter le mode marche"
-            className="absolute right-4 top-4 rounded-full border border-white/25 p-2 text-white/70"
+            className="absolute right-4 top-[calc(var(--safe-area-inset-top,env(safe-area-inset-top,0px))+1rem)] rounded-full border border-white/25 p-2 text-white/70"
           >
             <X className="h-5 w-5" />
           </button>
@@ -323,7 +323,7 @@ function Index() {
         ) : (
           <p className="relative text-white/70">Activez votre position pour démarrer la marche.</p>
         )}
-        <div className="absolute inset-x-0 bottom-5 flex justify-center gap-2">
+        <div className="absolute inset-x-0 bottom-[calc(var(--safe-area-inset-bottom,env(safe-area-inset-bottom,0px))+1.25rem)] flex flex-wrap justify-center gap-2 px-3">
           {!pad && chaining && (
             <button
               type="button"
@@ -387,8 +387,8 @@ function Index() {
     <main className="min-h-screen bg-background px-5 py-10 text-foreground">
       <div className="mx-auto flex w-full max-w-md flex-col gap-8">
         <header className="text-center">
-          <p className="font-jp text-sm tracking-[0.4em] text-primary">場所じ</p>
-          <h1 className="mt-2 font-jp text-2xl font-semibold tracking-tight">Bashoji</h1>
+          <p className="font-jp text-sm tracking-[0.4em] text-primary">漢字世界</p>
+          <h1 className="mt-2 font-jp text-2xl font-semibold tracking-tight">Kanji Sekai</h1>
           <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
             Le kanji du lieu. Chaque carré de 30 mètres possède son propre kanji, toujours le même
             pour un même geohash.

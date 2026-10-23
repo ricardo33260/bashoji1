@@ -31,7 +31,7 @@ const rootRoute = createRootRoute({
   notFoundComponent: () => (
     <div className="flex min-h-screen items-center justify-center">
       <Link to="/" className="rounded-md bg-primary px-4 py-2 text-primary-foreground">
-        Bashoji
+        Kanji Sekai
       </Link>
     </div>
   ),

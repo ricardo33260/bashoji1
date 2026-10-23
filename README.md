@@ -1,4 +1,4 @@
-# 場 Bashoji
+# 世界 Kanji Sekai
 
 Le kanji attaché à chaque lieu, un carré de 30 m à la fois.
 
@@ -14,18 +14,18 @@ bun run dev
 ```sh
 git init
 git add .
-git commit -m "Bashoji: premier commit"
+git commit -m "Kanji Sekai: premier commit"
 git branch -M main
 git remote add origin https://github.com/<ton-compte>/bashoji.git
 git push -u origin main
 ```
 Le workflow `CI` build l'app à chaque push.
 
-## Déployer (Cloudflare Workers)
+## (Optionnel) Déployer le site en ligne sur Cloudflare
 1. Crée un token API Cloudflare (modèle « Edit Cloudflare Workers »).
 2. Dans GitHub : Settings > Secrets and variables > Actions, ajoute
    `CLOUDFLARE_API_TOKEN` et `CLOUDFLARE_ACCOUNT_ID`.
-3. Chaque push sur `main` lance `Deploy (Cloudflare)`.
+3. Recrée un workflow `deploy.yml` (`bunx wrangler deploy` après `bun run build`). Il a été retiré car l'APK hors ligne n'en a pas besoin.
 
 Si le build ne génère pas de config Wrangler, ajoute un `wrangler.jsonc`
 (nom : `bashoji`) pointant vers la sortie `.output/` du build.

@@ -7,13 +7,13 @@ import { MemoryPlaceEditor } from "@/components/MemoryPlaceEditor";
 export const Route = createFileRoute("/collection")({
   head: () => ({
     meta: [
-      { title: "Collection — Bashoji" },
+      { title: "Collection — Kanji Sekai" },
       {
         name: "description",
         content:
-          "Les kanji dont vous avez validé le tracé en marchant. Votre collection personnelle Bashoji.",
+          "Les kanji dont vous avez validé le tracé en marchant. Votre collection personnelle Kanji Sekai.",
       },
-      { property: "og:title", content: "Collection — Bashoji" },
+      { property: "og:title", content: "Collection — Kanji Sekai" },
       {
         property: "og:description",
         content: "Kanji validés au tracé, classés par date de réussite.",
@@ -31,7 +31,7 @@ function CollectionPage() {
     <main className="min-h-screen bg-background px-5 py-10 text-foreground">
       <div className="mx-auto flex w-full max-w-md flex-col gap-8">
         <header className="text-center">
-          <p className="font-jp text-sm tracking-[0.4em] text-primary">場所じ</p>
+          <p className="font-jp text-sm tracking-[0.4em] text-primary">漢字世界</p>
           <h1 className="mt-2 font-jp text-2xl font-semibold tracking-tight">Collection</h1>
           <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
             {collection.items.length === 0

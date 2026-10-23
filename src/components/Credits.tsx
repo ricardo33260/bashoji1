@@ -21,9 +21,9 @@ export function Credits() {
       </DialogTrigger>
       <DialogContent className="max-h-[85vh] overflow-y-auto">
         <DialogHeader>
-          <DialogTitle className="font-jp">場 Bashoji — Crédits</DialogTitle>
+          <DialogTitle className="font-jp">世界 Kanji Sekai — Crédits</DialogTitle>
           <DialogDescription>
-            Bashoji ne collecte aucune donnée : tout reste sur votre appareil.
+            Kanji Sekai ne collecte aucune donnée : tout reste sur votre appareil.
           </DialogDescription>
         </DialogHeader>
         <ul className="flex flex-col gap-3 text-sm leading-relaxed">

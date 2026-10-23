@@ -1,14 +1,14 @@
-# Fiche Play Store — Bashoji
+# Fiche Play Store — Kanji Sekai
 
-**Nom** : Bashoji — le kanji de chaque lieu (max 30 car.)
-**Identifiant** : com.bashoji.app (définitif après la 1re publication !)
+**Nom** : Kanji Sekai : kanji du lieu (27 car., max 30)
+**Identifiant** : com.kanjisekai.app (définitif après la 1re publication !)
 **Catégorie** : Éducation · **Gratuit** · **Public** : 13 ans et plus (à confirmer dans le questionnaire)
 
 ## Description courte (80 car. max)
 Chaque lieu a son kanji. Apprenez-le et tracez-le dans l'air, sans connexion.
 
 ## Description longue
-Bashoji associe un kanji à chaque carré de 30 mètres sur Terre. Le même lieu donne toujours le même kanji, avec sa signification et ses lectures japonaises.
+Kanji Sekai associe un kanji à chaque carré de 30 mètres sur Terre. Le même lieu donne toujours le même kanji, avec sa signification et ses lectures japonaises.
 
 • Marchez : le kanji du lieu s'affiche automatiquement
 • Regardez l'ordre des traits animé, puis dessinez-le à la main
@@ -20,7 +20,7 @@ Bashoji associe un kanji à chaque carré de 30 mètres sur Terre. Le même lieu
 
 ## English short / long
 Short: Every place has its own kanji. Learn it and trace it in the air, offline.
-Long: Bashoji assigns a kanji to every 30 m square on Earth. Walk, discover the kanji of your place, watch its stroke order, then trace it on screen or in mid-air with your camera. 2136 jōyō kanji, fully offline, no account, no ads.
+Long: Kanji Sekai assigns a kanji to every 30 m square on Earth. Walk, discover the kanji of your place, watch its stroke order, then trace it on screen or in mid-air with your camera. 2136 jōyō kanji, fully offline, no account, no ads.
 
 ## Graphismes
 - Icône 512×512 : store/play-icon-512.png
